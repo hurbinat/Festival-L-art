@@ -1,0 +1,212 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Festival L`art</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo Louvre</a>
+          <a href="#secc2">Festival L`art</a>
+          <a href="#secc3">Ponentes</a>
+          <a href="#secc4">Fechas</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Museo Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El museo Louvre se encuentra en el interior del Palacio del Louvre, fue una antigua fortaleza construida a finales del siglo XII por el rey Felipe II.
+Es uno de los muses mas grandes del mundo, se encuentra en el centro de Paris, tambien es considerado el museo mas visitado del mundo, ya que cada año mas de 8 millones de personas lo visitan; tiene casi 35.000 objetos en sus 60.600 m² comprende desde la Prehistoria hasta el siglo XXI, se observan colecciones de pintura, estructura, artes decorativas, artes graficas y artes del islam.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+                    <a href="360 visualizar.html"><img src="imagenes/img1b.png" title="Img 1b"></a>
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>Dale un vistazo al museo en 360º solo da clic</p>
+	        		<!--texto para imagen a la derecha-->
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Dale un vistazo al museo en 360º solo da clic</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<a href="360 visualizar.html"><img src="imagenes/img1b.png" title="Img 1b"></a>
+	        		<!--texto para la imagen-->
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Festival L`art</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La cultura sale del museo, podrás vivir una experiencia inolvidable.
+L`art el festival que te envolverá en la cultura todo bajo la majestuosa sombra del Museo del Louvre.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Descubre nuevas lecturas ampliando tus conocimientos, podrás conocer sobre “1984” de George Orwell, “Un mundo feliz” de Adous Huxley, “The rape of the mind: The psychology of though” de Joost Merrlon y “Confesiones de un sicario económico” de John Perkins 
+Disfruta de una series de películas que te harán entrar en la historia, “Land of the blind”, “Documental Zeitgesit” y Documental “The Money Masters”.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2a.png" title="Img 2a">
+                <a href= "https://www.youtube.com/playlist?list=PLhsDR93scojKmIupWtGfDpdDO9PQSEpVX"><img  src="imagenes/img2b.png" title="Img 2b"></a>
+        		<!--texto para la imagen-->
+        		<p>Grandes descubrimientos te esperan en libros, exposiciones y documentales. Da clic para tener un vistazo</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Ponentes</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Podrás presenciar una ponencia con grandes autores, donde conocerás temas interesantes y sus obras, los ponentes invitados son Jorge Guerra, Antony Sutton, Marcelo Gullo y Juan Miguel Zunzunegui.</p>
+		        <br><!--etiqueta para un brinco de 
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3a.png" title="Img 3a">
+                <p>Jorge Guerra</p>
+                <br>
+                	<img  src="imagenes/img3b.png" title="Img 3b">
+                <p>Antony Sutton</p>
+                <br>	
+                
+                <img  src="imagenes/img3c.png" title="Img 3c">
+                <p>Marcelo Gullo </p>
+                <br>
+                	<img  src="imagenes/img3d.png" title="Img 3d">
+        		<br><!--texto para la imagen-->
+        		<p>Juan Miguel Zunzunegui</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Fechas</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Acceso gratuito
+                    <br>
+Ubicación: Afuera del Museo del Louvre, París.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Dia: 4 de Mayo del 2025
+Hora: 10 a.m a 1 p.m</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+<p>Dia: 11 de Mayo del 2025
+Hora: 10 a.m a 1 p.m</p>
+                 <br><!--etiqueta para un brinco de renglón-->
+<p>Dia: 18 de Mayo del 2025
+Hora: 10 a.m a 1 p.m</p>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img4.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p>Agenda tu fecha preferida en tu calendario, no te lo pierdas</p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
